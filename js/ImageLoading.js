@@ -26,7 +26,7 @@ function loadImages() {
 		{varName: mapDoorFramePic, fileName: 'map_door_frame.png'},
 		{varName: mapPillarPic, fileName: 'map_pillar.png'},
 		{varName: mapForceFieldPic, fileName: 'map_force_field.png'},
-		{varName: deathOrbPic, fileName: 'death_orb.png'},
+		{varName: FroggyPic, fileName: 'froggy.png'},
 		{varName: skyBox1, fileName: 'skybox1.png'},
 		{varName: skyBox2, fileName: 'skybox2.png'},
 		{varName: skyBox3, fileName: 'skybox3.png'}
@@ -57,15 +57,15 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 }
 
 function loadSprites() {
-	doSprite1 = new Sprite(deathOrbPic, 22.5, 22.5, 0, 64, 64);
+	doSprite1 = new Sprite(FroggyPic, 22.5, 22.5, 0, 64, 64);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(deathOrbPic, 6, 12, Math.PI*0.5, 64, 64);
+	doSprite2 = new Sprite(FroggyPic, 6, 12, Math.PI*0.5, 64, 64);
 	spriteList.push(doSprite2);
-	doSprite3 = new Sprite(deathOrbPic, 6, 9, Math.PI*1.5, 64, 64);
+	doSprite3 = new Sprite(FroggyPic, 6, 9, Math.PI*1.5, 64, 64);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(deathOrbPic, 1.5, 22.5, Math.PI*0.5, 64, 64);
+	doSprite4 = new Sprite(FroggyPic, 1.5, 22.5, Math.PI*0.5, 64, 64);
 	spriteList.push(doSprite4);
-	doSprite5 = new Sprite(deathOrbPic, 14.5, 11.5, 0, 64, 64);
+	doSprite5 = new Sprite(FroggyPic, 14.5, 11.5, 0, 64, 64);
 	spriteList.push(doSprite5);
 
 	for (var i=0; i<spriteList.length; i++) {
