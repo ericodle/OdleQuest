@@ -16,55 +16,61 @@ body {
 #viewport {
     width: 80%;
     height: 60%;
-    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
     background-color: #333; /* Background color to visualize the viewport */
 }
 
 .room {
-    display: none;
-    position: absolute;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
-    background-color: #000; /* Ensure visibility of the room */
+    position: relative;
+    background-color: red; /* Red background for the room */
+    display: flex;
+    flex-direction: column;
 }
 
 .wall {
-    width: 30%;
+    position: absolute;
     height: 80%;
-    margin: 2%;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    border: 2px solid #fff; /* Border to visualize the wall */
+    width: 30%;
+    background-color: yellow; /* Yellow walls */
+    top: 10%;
+}
+
+.forward-wall {
+    left: 0;
+    width: 100%;
+    background-color: red; /* Red forward wall */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.side-wall {
+    top: 10%;
+    background-color: yellow;
 }
 
 .floor-ceiling {
     position: absolute;
     width: 100%;
-    border: 2px solid #fff; /* Border to visualize the floor and ceiling */
 }
 
-.room .description {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 5px;
+.floor {
+    height: 10%;
+    background-color: yellow; /* Yellow floor */
+    bottom: 0;
 }
 
-#controls button {
-    margin: 5px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.ceiling {
+    height: 10%;
+    background-color: yellow; /* Yellow ceiling */
+    top: 0;
 }
 
-#controls button:hover {
-    background-color: #555;
+.description {
+    font-size: 24px;
+    font-weight: bold;
 }
