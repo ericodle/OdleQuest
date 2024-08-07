@@ -1,7 +1,45 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Ensure the welcome room is visible when the page loads
-    const welcomeRoom = document.getElementById('welcome-room');
-    if (welcomeRoom) {
-        welcomeRoom.style.display = 'flex'; // Display the welcome room
+const canvas = document.getElementById('gameCanvas');
+const ctx = canvas.getContext('2d');
+const width = canvas.width = window.innerWidth;
+const height = canvas.height = window.innerHeight;
+
+const map = [
+    '##########',
+    '#........#',
+    '#........#',
+    '#........#',
+    '#........#',
+    '#........#',
+    '#........#',
+    '#........#',
+    '#........#',
+    '##########'
+];
+
+const tileSize = 64;
+const player = { x: 100, y: 100, angle: 0 };
+
+function drawMap() {
+    for (let y = 0; y < map.length; y++) {
+        for (let x = 0; x < map[y].length; x++) {
+            if (map[y][x] === '#') {
+                ctx.fillStyle = 'gray';
+                ctx.fillRect(x * tileSize, y * tileSize, tileSize, tileSize);
+            }
+        }
     }
-});
+}
+
+function drawPlayer() {
+    ctx.fillStyle = 'red';
+    ctx.fillRect(player.x, player.y, 10, 10);
+}
+
+function update() {
+    ctx.clearRect(0, 0, width, height);
+    drawMap();
+    drawPlayer();
+    requestAnimationFrame(update);
+}
+
+update();
