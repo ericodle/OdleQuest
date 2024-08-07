@@ -1,4 +1,4 @@
-const rooms = ['em-gallery', 'uw-gallery', 'landscape-gallery', 'travel-gallery'];
+const rooms = ['welcome-room', 'em-gallery', 'uw-gallery', 'landscape-gallery', 'travel-gallery'];
 let currentRoomIndex = 0;
 
 function navigate(direction) {
@@ -10,10 +10,11 @@ function navigate(direction) {
         currentRoomIndex = (currentRoomIndex + 1) % rooms.length;
     } else if (direction === 'forward' || direction === 'backward') {
         // Implement specific logic for forward/backward navigation if needed
+        return; // For now, just return without changing the room
     }
 
     document.getElementById(rooms[currentRoomIndex]).style.display = 'block';
 }
 
-// Initialize the first room
+// Initialize the welcome room
 document.getElementById(rooms[currentRoomIndex]).style.display = 'block';
