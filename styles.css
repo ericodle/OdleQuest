@@ -18,6 +18,8 @@ body {
     height: 60%;
     margin-bottom: 20px;
     position: relative;
+    overflow: hidden;
+    background-color: #333; /* Background color to visualize the viewport */
 }
 
 .room {
@@ -26,6 +28,7 @@ body {
     width: 100%;
     height: 100%;
     border: 2px solid #fff;
+    background-color: #000; /* Ensure visibility of the room */
 }
 
 .wall {
@@ -35,6 +38,13 @@ body {
     display: inline-block;
     background-size: cover;
     background-position: center;
+    border: 2px solid #fff; /* Border to visualize the wall */
+}
+
+.floor-ceiling {
+    position: absolute;
+    width: 100%;
+    border: 2px solid #fff; /* Border to visualize the floor and ceiling */
 }
 
 .room .description {
