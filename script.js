@@ -1,20 +1,7 @@
-const rooms = ['welcome-room', 'em-gallery', 'uw-gallery', 'landscape-gallery', 'travel-gallery'];
-let currentRoomIndex = 0;
-
-function navigate(direction) {
-    document.getElementById(rooms[currentRoomIndex]).style.display = 'none';
-
-    if (direction === 'left') {
-        currentRoomIndex = (currentRoomIndex - 1 + rooms.length) % rooms.length;
-    } else if (direction === 'right') {
-        currentRoomIndex = (currentRoomIndex + 1) % rooms.length;
-    } else if (direction === 'forward' || direction === 'backward') {
-        // Implement specific logic for forward/backward navigation if needed
-        return; // For now, just return without changing the room
+document.addEventListener('DOMContentLoaded', function() {
+    // Ensure the welcome room is visible when the page loads
+    const welcomeRoom = document.getElementById('welcome-room');
+    if (welcomeRoom) {
+        welcomeRoom.style.display = 'flex'; // Display the welcome room
     }
-
-    document.getElementById(rooms[currentRoomIndex]).style.display = 'block';
-}
-
-// Initialize the welcome room
-document.getElementById(rooms[currentRoomIndex]).style.display = 'block';
+});
