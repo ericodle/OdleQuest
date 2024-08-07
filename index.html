@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdleQuest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="viewport">
+            <!-- Electron Microscopy Gallery -->
+            <div class="room" id="em-gallery">
+                <div class="wall" style="background-image: url('images/electron_microscopy/em1.jpg');"></div>
+                <div class="wall" style="background-image: url('images/electron_microscopy/em2.jpg');"></div>
+                <div class="wall" style="background-image: url('images/electron_microscopy/em3.jpg');"></div>
+                <div class="description">Electron Microscopy Gallery</div>
+            </div>
+            <!-- Underwater Photography Gallery -->
+            <div class="room" id="uw-gallery">
+                <div class="wall" style="background-image: url('images/underwater/uw1.jpg');"></div>
+                <div class="wall" style="background-image: url('images/underwater/uw2.jpg');"></div>
+                <div class="wall" style="background-image: url('images/underwater/uw3.jpg');"></div>
+                <div class="description">Underwater Photography Gallery</div>
+            </div>
+            <!-- Landscape Photography Gallery -->
+            <div class="room" id="landscape-gallery">
+                <div class="wall" style="background-image: url('images/landscape/landscape1.jpg');"></div>
+                <div class="wall" style="background-image: url('images/landscape/landscape2.jpg');"></div>
+                <div class="wall" style="background-image: url('images/landscape/landscape3.jpg');"></div>
+                <div class="description">Landscape Photography Gallery</div>
+            </div>
+            <!-- Travel Photography Gallery -->
+            <div class="room" id="travel-gallery">
+                <div class="wall" style="background-image: url('images/travel/travel1.jpg');"></div>
+                <div class="wall" style="background-image: url('images/travel/travel2.jpg');"></div>
+                <div class="wall" style="background-image: url('images/travel/travel3.jpg');"></div>
+                <div class="description">Travel Photography Gallery</div>
+            </div>
+        </div>
+        <div id="controls">
+            <button onclick="navigate('left')">Left</button>
+            <button onclick="navigate('right')">Right</button>
+            <button onclick="navigate('forward')">Forward</button>
+            <button onclick="navigate('backward')">Backward</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
