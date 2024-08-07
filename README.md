@@ -1,2 +1,2 @@
 # OdleQuest
-dungeon crawler and photography showcase
+Portfolio in a raycasting environment.
