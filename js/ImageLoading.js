@@ -20,7 +20,7 @@ var spriteOrder = [];//Stores sorted spriteList indexes
 function loadImages() {
 	
 	var imageList = [
-		{varName: mapWallPic1, fileName: 'map_wall.png'},
+		{varName: mapWallPic1, fileName: 'sea_wall.png'},
 		{varName: mapWallPic2, fileName:  'map_wall2.png'},
 		{varName: mapDoorPic, fileName: 'map_door.png'},
 		{varName: mapDoorFramePic, fileName: 'map_door_frame.png'},
