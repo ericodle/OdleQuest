@@ -24,7 +24,7 @@ function loadImages() {
 		{varName: mapWallPic2, fileName:  'sea_wall.png'},
 		{varName: mapDoorPic, fileName: 'map_door.png'},
 		{varName: mapDoorFramePic, fileName: 'map_door_frame.png'},
-		{varName: mapPillarPic, fileName: 'aneomone_1.png'},
+		{varName: mapPillarPic, fileName: 'anemone_1.png'},
 		{varName: mapForceFieldPic, fileName: 'map_force_field.png'},
 		{varName: deathOrbPic, fileName: 'froggy_3.png'},
 		{varName: skyBox1, fileName: 'skybox1.png'},
