@@ -21,7 +21,7 @@ function loadImages() {
 	
 	var imageList = [
 		{varName: mapWallPic1, fileName: 'sea_wall.png'},
-		{varName: mapWallPic2, fileName:  'map_wall2.png'},
+		{varName: mapWallPic2, fileName:  'sea_wall.png'},
 		{varName: mapDoorPic, fileName: 'map_door.png'},
 		{varName: mapDoorFramePic, fileName: 'map_door_frame.png'},
 		{varName: mapPillarPic, fileName: 'map_pillar.png'},
