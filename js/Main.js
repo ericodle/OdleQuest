@@ -38,8 +38,8 @@ function moveAll() {
 
 function drawAll() {
     ctx.clearRect(0,0, w,h);
-	// sandybrown too brown; blanchedalmond too similar to frog belly;
-    drawSkyBox(player, '#351c66', 'seashell', skyBox1, skyBox2, skyBox3);
+	// sandybrown too brown;
+    drawSkyBox(player, '#351c66', 'blanchedalmond', skyBox1, skyBox2, skyBox3);
 	for(var x = 0; x < w; x++) {
 		drawWall(player, worldMap, doorStates, doorOffsets, x);
 	}
