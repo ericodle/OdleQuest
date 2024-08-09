@@ -14,7 +14,7 @@ window.onload = function(){
 	
 	loadMap(worldMap);
 	generateLookups();
-	player = new Camera(12, 12, 0, 0, 0.66)
+	player = new Camera(3, 3, 1, 0, 0.66)
 	setupInput();
 	loadImages();
 }
