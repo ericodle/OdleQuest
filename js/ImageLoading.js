@@ -59,11 +59,11 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 function loadSprites() {
 	doSprite1 = new Sprite(froggy, 1, 1, 0, 64, 64);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(froggy, 6, 6, Math.PI*0.5, 64, 64);
+	doSprite2 = new Sprite(froggy, 6, 6, 0, 64, 64);
 	spriteList.push(doSprite2);
-	doSprite3 = new Sprite(anemone, 12, 12, Math.PI*1.5, 64, 64);
+	doSprite3 = new Sprite(anemone, 12, 12, 0, 256, 256);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(anemone, 18, 18, Math.PI*0.5, 64, 64);
+	doSprite4 = new Sprite(anemone, 18, 18, 0, 256, 256);
 	spriteList.push(doSprite4);
 
 	for (var i=0; i<spriteList.length; i++) {
