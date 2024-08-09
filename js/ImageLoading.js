@@ -26,7 +26,7 @@ function loadImages() {
 		{varName: mapDoorFramePic, fileName: 'map_door_frame.png'},
 		{varName: anemone, fileName: 'anemone_1.png'},
 		{varName: mapForceFieldPic, fileName: 'map_force_field.png'},
-		{varName: froggy, fileName: 'froggy_3.png'},
+		{varName: froggy, fileName: 'froggy_4.png'},
 		{varName: skyBox1, fileName: 'skybox1.png'},
 		{varName: skyBox2, fileName: 'skybox2.png'},
 		{varName: skyBox3, fileName: 'skybox3.png'}
@@ -57,9 +57,9 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 }
 
 function loadSprites() {
-	doSprite1 = new Sprite(froggy, 1, 1, 0, 64, 64);
+	doSprite1 = new Sprite(froggy, 3, 3, 0, 256, 256);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(froggy, 6, 6, 0, 64, 64);
+	doSprite2 = new Sprite(froggy, 6, 6, 0, 256, 256);
 	spriteList.push(doSprite2);
 	doSprite3 = new Sprite(anemone, 12, 12, 0, 256, 256);
 	spriteList.push(doSprite3);
