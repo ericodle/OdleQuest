@@ -2,7 +2,7 @@ var mapWallPic1 = document.createElement('img');
 var mapWallPic2 = document.createElement('img');
 var mapDoorPic = document.createElement('img');
 var mapDoorFramePic = document.createElement('img');
-var mapPillarPic = document.createElement('img');
+var anemone = document.createElement('img');
 var mapForceFieldPic = document.createElement('img');
 var spaceMarinePic = document.createElement('img');
 var froggy = document.createElement('img');
@@ -24,7 +24,7 @@ function loadImages() {
 		{varName: mapWallPic2, fileName:  'sea_wall.png'},
 		{varName: mapDoorPic, fileName: 'map_door.png'},
 		{varName: mapDoorFramePic, fileName: 'map_door_frame.png'},
-		{varName: mapPillarPic, fileName: 'anemone_1.png'},
+		{varName: anemone, fileName: 'anemone_1.png'},
 		{varName: mapForceFieldPic, fileName: 'map_force_field.png'},
 		{varName: froggy, fileName: 'froggy_3.png'},
 		{varName: skyBox1, fileName: 'skybox1.png'},
@@ -57,16 +57,14 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 }
 
 function loadSprites() {
-	doSprite1 = new Sprite(froggy, 8, 8, 0, 64, 64);
+	doSprite1 = new Sprite(froggy, 1, 1, 0, 64, 64);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(froggy, 8, 8, Math.PI*0.5, 64, 64);
+	doSprite2 = new Sprite(froggy, 6, 6, Math.PI*0.5, 64, 64);
 	spriteList.push(doSprite2);
-	doSprite3 = new Sprite(froggy, 8, 8, Math.PI*1.5, 64, 64);
+	doSprite3 = new Sprite(anemone, 12, 12, Math.PI*1.5, 64, 64);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(froggy, 8, 8, Math.PI*0.5, 64, 64);
+	doSprite4 = new Sprite(anemone, 18, 18, Math.PI*0.5, 64, 64);
 	spriteList.push(doSprite4);
-	doSprite5 = new Sprite(froggy, 8, 8, 0, 64, 64);
-	spriteList.push(doSprite5);
 
 	for (var i=0; i<spriteList.length; i++) {
 		spriteList[i].init();
