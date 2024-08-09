@@ -57,15 +57,15 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 }
 
 function loadSprites() {
-	doSprite1 = new Sprite(froggy, 22.5, 22.5, 0, 64, 64);
+	doSprite1 = new Sprite(froggy, 8, 8, 0, 64, 64);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(froggy, 6, 12, Math.PI*0.5, 64, 64);
+	doSprite2 = new Sprite(froggy, 8, 8, Math.PI*0.5, 64, 64);
 	spriteList.push(doSprite2);
-	doSprite3 = new Sprite(froggy, 6, 9, Math.PI*1.5, 64, 64);
+	doSprite3 = new Sprite(froggy, 8, 8, Math.PI*1.5, 64, 64);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(froggy, 1.5, 22.5, Math.PI*0.5, 64, 64);
+	doSprite4 = new Sprite(froggy, 8, 8, Math.PI*0.5, 64, 64);
 	spriteList.push(doSprite4);
-	doSprite5 = new Sprite(froggy, 14.5, 11.5, 0, 64, 64);
+	doSprite5 = new Sprite(froggy, 8, 8, 0, 64, 64);
 	spriteList.push(doSprite5);
 
 	for (var i=0; i<spriteList.length; i++) {
