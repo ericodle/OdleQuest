@@ -9,6 +9,8 @@ var froggy = document.createElement('img');
 var skyBox1 = document.createElement('img');
 var skyBox2 = document.createElement('img');
 var skyBox3 = document.createElement('img');
+var sem1 = document.createElement('img');
+var sem2 = document.createElement('img');
 
 var imagesToLoad = 0;
 
@@ -29,7 +31,9 @@ function loadImages() {
 		{varName: froggy, fileName: 'froggy_4.png'},
 		{varName: skyBox1, fileName: 'skybox1.png'},
 		{varName: skyBox2, fileName: 'skybox2.png'},
-		{varName: skyBox3, fileName: 'skybox3.png'}
+		{varName: skyBox3, fileName: 'skybox3.png'},
+		{varName: sem1, fileName: 'sem_1.png'},		
+		{varName: sem2, fileName: 'sem_2.png'}
 	]
 	
 	imagesToLoad = imageList.length;
@@ -57,13 +61,13 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 }
 
 function loadSprites() {
-	doSprite1 = new Sprite(froggy, 3, 3, 0, 256, 256);
+	doSprite1 = new Sprite(froggy, 11, 11, 0, 256, 256);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(froggy, 6, 6, 0, 256, 256);
+	doSprite2 = new Sprite(anemone, 12, 12, 0, 256, 256);
 	spriteList.push(doSprite2);
-	doSprite3 = new Sprite(anemone, 12, 12, 0, 256, 256);
+	doSprite3 = new Sprite(sem1, 16, 16, 0, 256, 256);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(anemone, 18, 18, 0, 256, 256);
+	doSprite4 = new Sprite(sem2, 18, 18, 0, 256, 256);
 	spriteList.push(doSprite4);
 
 	for (var i=0; i<spriteList.length; i++) {
