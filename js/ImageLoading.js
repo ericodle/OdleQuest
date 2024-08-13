@@ -33,7 +33,7 @@ function loadImages() {
 		{varName: skyBox2, fileName: 'skybox2.png'},
 		{varName: skyBox3, fileName: 'skybox3.png'},
 		{varName: sem1, fileName: 'sem_1.png'},		
-		{varName: sem2, fileName: 'sem_2.png'}
+		{varName: sem2, fileName: 'sem2_2.png'}
 	]
 	
 	imagesToLoad = imageList.length;
@@ -67,7 +67,7 @@ function loadSprites() {
 	spriteList.push(doSprite2);
 	doSprite3 = new Sprite(sem1, 16, 16, 0, 256, 256);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(sem2, 18, 18, 0, 256, 256);
+	doSprite4 = new Sprite(sem2, 18, 18, 0, 1053, 867);
 	spriteList.push(doSprite4);
 
 	for (var i=0; i<spriteList.length; i++) {
