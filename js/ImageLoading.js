@@ -11,6 +11,9 @@ var skyBox2 = document.createElement('img');
 var skyBox3 = document.createElement('img');
 var sem1 = document.createElement('img');
 var sem2 = document.createElement('img');
+var sem3 = document.createElement('img');
+var sem4 = document.createElement('img');
+var sem5 = document.createElement('img');
 
 var imagesToLoad = 0;
 
@@ -32,8 +35,11 @@ function loadImages() {
 		{varName: skyBox1, fileName: 'skybox1.png'},
 		{varName: skyBox2, fileName: 'skybox2.png'},
 		{varName: skyBox3, fileName: 'skybox3.png'},
-		{varName: sem1, fileName: 'sem_1.png'},		
-		{varName: sem2, fileName: 'sem2_2.png'}
+		{varName: sem1, fileName: 'sem1_1.png'},
+		{varName: sem2, fileName: 'sem2_3.png'},
+		{varName: sem3, fileName: 'sem3_1.png'},
+		{varName: sem4, fileName: 'sem4_1.png'},
+		{varName: sem5, fileName: 'sem5_1.png'}
 	]
 	
 	imagesToLoad = imageList.length;
@@ -65,9 +71,15 @@ function loadSprites() {
 	spriteList.push(doSprite1);
 	doSprite2 = new Sprite(anemone, 12, 12, 0, 256, 256);
 	spriteList.push(doSprite2);
-	doSprite3 = new Sprite(sem1, 16, 16, 0, 256, 256);
+	doSprite3 = new Sprite(sem1, 3, 3, 0, 1248, 1847);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(sem2, 18, 18, 0, 1053, 867);
+	doSprite4 = new Sprite(sem2, 4, 4, 0, 1016, 826);
+	spriteList.push(doSprite4);
+	doSprite5 = new Sprite(sem3, 5, 5, 0, 1239, 446);
+	spriteList.push(doSprite4);
+	doSprite6 = new Sprite(sem4, 6, 6, 0, 826, 799);
+	spriteList.push(doSprite4);
+	doSprite7 = new Sprite(sem5, 7, 7, 0, 759, 831);
 	spriteList.push(doSprite4);
 
 	for (var i=0; i<spriteList.length; i++) {
