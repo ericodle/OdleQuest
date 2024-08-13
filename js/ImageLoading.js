@@ -76,11 +76,11 @@ function loadSprites() {
 	doSprite4 = new Sprite(sem2, 4, 4, 0, 1016, 826);
 	spriteList.push(doSprite4);
 	doSprite5 = new Sprite(sem3, 5, 5, 0, 1239, 446);
-	spriteList.push(doSprite4);
+	spriteList.push(doSprite5);
 	doSprite6 = new Sprite(sem4, 6, 6, 0, 826, 799);
-	spriteList.push(doSprite4);
+	spriteList.push(doSprite6);
 	doSprite7 = new Sprite(sem5, 7, 7, 0, 759, 831);
-	spriteList.push(doSprite4);
+	spriteList.push(doSprite7);
 
 	for (var i=0; i<spriteList.length; i++) {
 		spriteList[i].init();
