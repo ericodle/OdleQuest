@@ -67,19 +67,21 @@ function countImagesOrStartGame() {//Ensure that all images are loaded before tr
 }
 
 function loadSprites() {
+	//Pixel art
 	doSprite1 = new Sprite(froggy, 11, 11, 0, 256, 256);
 	spriteList.push(doSprite1);
 	doSprite2 = new Sprite(anemone, 12, 12, 0, 256, 256);
 	spriteList.push(doSprite2);
+	//SEM pics
 	doSprite3 = new Sprite(sem1, 3, 3, 0, 1248, 1847);
 	spriteList.push(doSprite3);
-	doSprite4 = new Sprite(sem2, 4, 4, 0, 1016, 826);
+	doSprite4 = new Sprite(sem2, 3, 5, 0, 1016, 826);
 	spriteList.push(doSprite4);
-	doSprite5 = new Sprite(sem3, 5, 5, 0, 1239, 446);
+	doSprite5 = new Sprite(sem3, 3, 7, 0, 1239, 446);
 	spriteList.push(doSprite5);
-	doSprite6 = new Sprite(sem4, 6, 6, 0, 826, 799);
+	doSprite6 = new Sprite(sem4, 3, 9, 0, 826, 799);
 	spriteList.push(doSprite6);
-	doSprite7 = new Sprite(sem5, 7, 7, 0, 759, 831);
+	doSprite7 = new Sprite(sem5, 3, 11, 0, 759, 831);
 	spriteList.push(doSprite7);
 
 	for (var i=0; i<spriteList.length; i++) {
