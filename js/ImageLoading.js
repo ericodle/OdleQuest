@@ -73,7 +73,7 @@ function loadSprites() {
 	doSprite2 = new Sprite(anemone, 12, 12, 0, 256, 256);
 	spriteList.push(doSprite2);
 	//SEM pics
-	doSprite3 = new Sprite(sem1, 5, 3, 0, 1248, 1847);
+	doSprite3 = new Sprite(sem1, 4, 3, 0, 1248, 1847);
 	spriteList.push(doSprite3);
 	doSprite4 = new Sprite(sem2, 4, 5, 0, 1016, 826);
 	spriteList.push(doSprite4);
@@ -81,7 +81,7 @@ function loadSprites() {
 	spriteList.push(doSprite5);
 	doSprite6 = new Sprite(sem4, 4, 9, 0, 826, 799);
 	spriteList.push(doSprite6);
-	doSprite7 = new Sprite(sem5, 5, 11, 0, 759, 831);
+	doSprite7 = new Sprite(sem5, 4, 11, 0, 759, 831);
 	spriteList.push(doSprite7);
 
 	for (var i=0; i<spriteList.length; i++) {
