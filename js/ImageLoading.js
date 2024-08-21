@@ -32,7 +32,7 @@ function loadImages() {
 		{varName: anemone, fileName: 'anemone_1.png'},
 		{varName: mapForceFieldPic, fileName: 'map_force_field.png'},
 		{varName: froggy, fileName: 'froggy_4.png'},
-		{varName: skyBox1, fileName: 'skybox1.png'},
+		{varName: skyBox1, fileName: 'skybox_2.png'},
 		{varName: skyBox2, fileName: 'skybox2.png'},
 		{varName: skyBox3, fileName: 'skybox_2.png'},
 		{varName: sem1, fileName: 'sem1_1.png'},
