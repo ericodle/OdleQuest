@@ -39,7 +39,12 @@ function loadImages() {
 		{varName: sem2, fileName: 'sem2_3.png'},
 		{varName: sem3, fileName: 'sem3_2.png'},
 		{varName: sem4, fileName: 'sem4_1.png'},
-		{varName: sem5, fileName: 'sem5_1.png'}
+		{varName: sem5, fileName: 'sem5_1.png'},
+		{varName: scuba1, fileName: 'scuba1_1.png'},
+		{varName: scuba2, fileName: 'scuba2_1.png'},
+		{varName: scuba3, fileName: 'scuba3_1.png'},
+		{varName: scuba4, fileName: 'scuba4_1.png'},
+		{varName: scuba5, fileName: 'scuba5_1.png'}
 	]
 	
 	imagesToLoad = imageList.length;
@@ -83,6 +88,17 @@ function loadSprites() {
 	spriteList.push(doSprite6);
 	doSprite7 = new Sprite(sem5, 7, 8, 0, 759, 831);
 	spriteList.push(doSprite7);
+	// Scuba pics
+	doSprite8 = new Sprite(scuba1, 7, 4, 0, 1248, 1847);
+	spriteList.push(doSprite8);
+	doSprite9 = new Sprite(scuba2, 5, 4, 0, 1016, 826);
+	spriteList.push(doSprite9);
+	doSprite10 = new Sprite(scuba3, 3, 6, 0, 1239, 446);
+	spriteList.push(doSprite10);
+	doSprite11 = new Sprite(scuba4, 5, 8, 0, 826, 799);
+	spriteList.push(doSprite11);
+	doSprite12 = new Sprite(scuba5, 7, 8, 0, 759, 831);
+	spriteList.push(doSprite12);
 
 	for (var i=0; i<spriteList.length; i++) {
 		spriteList[i].init();
