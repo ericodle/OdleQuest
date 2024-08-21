@@ -82,7 +82,7 @@ function loadSprites() {
 	spriteList.push(doSprite3);
 	doSprite4 = new Sprite(sem2, 5, 4, 0, 1016, 826);
 	spriteList.push(doSprite4);
-	doSprite5 = new Sprite(sem3, 3, 6, 0, 1239, 446);
+	doSprite5 = new Sprite(sem3, 3, 6, 0, 1280, 867);
 	spriteList.push(doSprite5);
 	doSprite6 = new Sprite(sem4, 5, 8, 0, 826, 799);
 	spriteList.push(doSprite6);
