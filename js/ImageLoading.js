@@ -89,15 +89,15 @@ function loadSprites() {
 	doSprite7 = new Sprite(sem5, 7, 8, 0, 759, 831);
 	spriteList.push(doSprite7);
 	// Scuba pics
-	doSprite8 = new Sprite(scuba1, 7, 4, 0, 768, 1024);
+	doSprite8 = new Sprite(scuba1, 7, 14, 0, 768, 1024);
 	spriteList.push(doSprite8);
-	doSprite9 = new Sprite(scuba2, 5, 4, 0, 1024, 768);
+	doSprite9 = new Sprite(scuba2, 5, 14, 0, 1024, 768);
 	spriteList.push(doSprite9);
-	doSprite10 = new Sprite(scuba3, 3, 6, 0, 1024, 831);
+	doSprite10 = new Sprite(scuba3, 3, 16, 0, 1024, 831);
 	spriteList.push(doSprite10);
-	doSprite11 = new Sprite(scuba4, 5, 8, 0, 1024, 831);
+	doSprite11 = new Sprite(scuba4, 5, 18, 0, 1024, 831);
 	spriteList.push(doSprite11);
-	doSprite12 = new Sprite(scuba5, 7, 8, 0, 1024, 831);
+	doSprite12 = new Sprite(scuba5, 7, 18, 0, 1024, 831);
 	spriteList.push(doSprite12);
 
 	for (var i=0; i<spriteList.length; i++) {
