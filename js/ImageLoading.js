@@ -37,7 +37,7 @@ function loadImages() {
 		{varName: skyBox3, fileName: 'skybox_2.png'},
 		{varName: sem1, fileName: 'sem1_1.png'},
 		{varName: sem2, fileName: 'sem2_3.png'},
-		{varName: sem3, fileName: 'sem3_1.png'},
+		{varName: sem3, fileName: 'sem3_2.png'},
 		{varName: sem4, fileName: 'sem4_1.png'},
 		{varName: sem5, fileName: 'sem5_1.png'}
 	]
