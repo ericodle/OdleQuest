@@ -14,6 +14,11 @@ var sem2 = document.createElement('img');
 var sem3 = document.createElement('img');
 var sem4 = document.createElement('img');
 var sem5 = document.createElement('img');
+var scuba1 = document.createElement('img');
+var scuba2 = document.createElement('img');
+var scuba3 = document.createElement('img');
+var scuba4 = document.createElement('img');
+var scuba5 = document.createElement('img');
 
 var imagesToLoad = 0;
 
