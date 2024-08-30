@@ -4,6 +4,7 @@ const MAP_WALL_2 = 2;
 const MAP_DOOR = 3;
 const MAP_DOOR_FRAME = 4;
 const MAP_PUSH_WALL = 5;
+const MAP_DOOR_WORM = 6;
 
 var mapWidth = 32;
 var mapHeight = 32;
