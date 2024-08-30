@@ -39,7 +39,7 @@ function loadImages() {
 		{varName: froggy, fileName: 'froggy_4.png'},
 		{varName: skyBox1, fileName: 'skybox_3.png'},
 		{varName: skyBox2, fileName: 'skybox_3.png'},
-		{varName: skyBox3, fileName: 'skybox_3.png'},
+		{varName: skyBox3, fileName: 'skybox_4.png'},
 		{varName: sem1, fileName: 'sem1_1.png'},
 		{varName: sem2, fileName: 'sem2_3.png'},
 		{varName: sem3, fileName: 'sem3_2.png'},
