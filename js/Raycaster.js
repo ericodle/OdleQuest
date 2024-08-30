@@ -240,7 +240,7 @@ function drawWall(whichCamera, whichMap, whichDoorStates, whichDoorOffsets, x) {
 			wallTex = mapDoorFramePic;
 			break;
 		case 6:
-			wallTex = mapPillarPic;
+			wallTex = mapDoorWorm;
 			break;
 		case 9:
 			wallTex = mapForceFieldPic;
