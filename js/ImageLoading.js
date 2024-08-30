@@ -48,8 +48,8 @@ function loadImages() {
 		{varName: scuba1, fileName: 'scuba1_1.png'},
 		{varName: scuba2, fileName: 'scuba2_1.png'},
 		{varName: scuba3, fileName: 'scuba3_1.png'},
-		{varName: scuba4, fileName: 'scuba3_1.png'},
-		{varName: scuba5, fileName: 'scuba3_1.png'}
+		{varName: scuba4, fileName: 'scuba2_1.png'},
+		{varName: scuba5, fileName: 'scuba1_1.png'}
 	]
 	
 	imagesToLoad = imageList.length;
