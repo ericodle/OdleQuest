@@ -199,6 +199,41 @@ function drawWall(whichCamera, whichMap, whichDoorStates, whichDoorOffsets, x) {
 						}
 					}
 				}
+			if (rayTex == 11 && whichDoorStates[mapX][mapY] != 2) { //Closed, opening, or closing doors
+				hit = 1;
+				if (side == 1) {
+					wallYOffset = 0.5 * stepY;
+					perpWallDist = (mapY - whichCamera.posY + wallYOffset + (1 - stepY) / 2) / rayDirY;
+					wallX = whichCamera.posX + perpWallDist * rayDirX;
+					wallX -= Math.floor(wallX);
+					if (sideDistY - (deltaDistY/2) < sideDistX) { //If ray hits offset wall
+						if (1.0 - wallX <= whichDoorOffsets[mapX][mapY]){
+							hit = 0; //Continue raycast for open/opening doors
+							wallYOffset = 0;
+						}
+					} else {
+						mapX += stepX;
+						side = 0;
+						rayTex = 4; //Draw door frame instead
+						wallYOffset = 0;
+					}
+				} else { //side == 0
+					wallXOffset = 0.5 * stepX;
+					perpWallDist  = (mapX - whichCamera.posX + wallXOffset + (1 - stepX) / 2) / rayDirX;
+					wallX = whichCamera.posY + perpWallDist * rayDirY;
+					wallX -= Math.floor(wallX);
+					if (sideDistX - (deltaDistX/2) < sideDistY) {
+						if (1.0 - wallX < whichDoorOffsets[mapX][mapY]) {
+							hit = 0;
+							wallXOffset = 0;
+						}
+					} else {
+						mapY += stepY;
+						side = 1;
+						rayTex = 4;
+						wallXOffset = 0;
+					}
+				}
 		 	} else if (rayTex != 3 && rayTex != 5) {
 				if (side == 1 && whichMap[mapX][mapY - stepY] == 3) rayTex = 4;//Draw doorframes on X sides of Y-side walls	
 				else if (side == 0 && whichMap[mapX - stepX][mapY] == 3) rayTex = 4;//Draw doorframes on Y sides of X-side walls
@@ -239,11 +274,12 @@ function drawWall(whichCamera, whichMap, whichDoorStates, whichDoorOffsets, x) {
 		case 4:
 			wallTex = mapDoorFramePic;
 			break;
-		case 6:
-			wallTex = mapDoorWorm;
-			break;
 		case 9:
 			wallTex = mapForceFieldPic;
+			break;
+
+		case 11:
+			wallTex = mapDoorWorm;
 			break;
 		default: 
 			wallTex = mapWallPic1;
