@@ -1,6 +1,7 @@
 var mapWallPic1 = document.createElement('img');
 var mapWallPic2 = document.createElement('img');
 var mapDoorPic = document.createElement('img');
+var mapDoorWorm = document.createElement('img');
 var mapDoorFramePic = document.createElement('img');
 var anemone = document.createElement('img');
 var mapForceFieldPic = document.createElement('img');
