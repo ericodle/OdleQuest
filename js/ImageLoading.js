@@ -82,7 +82,7 @@ function loadSprites() {
 	//Pixel art
 	doSprite1 = new Sprite(froggy, 9, 4, 0, 256, 256);
 	spriteList.push(doSprite1);
-	doSprite2 = new Sprite(anemone, 24, 4, 0, 256, 256);
+	doSprite2 = new Sprite(anemone, 18, 8, 0, 256, 256);
 	spriteList.push(doSprite2);
 	//SEM pics
 	doSprite3 = new Sprite(sem1, 7, 4, 0, 1248, 1847);
