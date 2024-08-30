@@ -82,7 +82,7 @@ function drawWall(whichCamera, whichMap, whichDoorStates, whichDoorOffsets, x) {
 		var wallX; //Where exactly the wall was hit
 		var angleSide = 0; //Which side of angled wall was hit
 		if (rayTex != 0) {
-			if (rayTex == 3 && whichDoorStates[mapX][mapY] != 2) { //Closed, opening, or closing doors
+			if (rayTex == 3 or 11 && whichDoorStates[mapX][mapY] != 2) { //Closed, opening, or closing doors
 				hit = 1;
 				if (side == 1) {
 					wallYOffset = 0.5 * stepY;
